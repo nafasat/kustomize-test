@@ -1,0 +1,12 @@
+
+   
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: deploy
+  labels:
+    name: nginx-service
+
+spec:
+  replicas: 3
+  minReadySeconds: 1
